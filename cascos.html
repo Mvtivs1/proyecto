@@ -12,47 +12,64 @@
 </head>
 
 <body>
+</head>
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <a class="navbar-brand" href="#">
+   <img src="imagenes/bicicleta-negra.jpg" alt="bicicleta-negra" width="50" >
+ </a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+       <a class="nav-link" href="cascos.html">Accesorios <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="bicicletas.html">Bicicletas</a>
+     </li>
+     
+     <li class="nav-item ">
+       <a class="nav-link" href="repuesto.html">Repuestos
+       </a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <div class="dropdown-divider"></div>
+
+       </div>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link " href="nosotros.html" tabindex="-1" aria-disabled="true">Nosotros</a>
+     </li>
+   </ul>
+
+
+   <form class="form-inline my-2 my-lg-0">
+     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ir</button>
+   </form>
+ </div>
+
+ <li class="nav-item">
+     <a href="index.html">Volver</a>
+   </li>
+</nav>
+
     
-    <header class="header">
-
-        <div class="logo">
-            <img src="imagenes/bicicleta-negra.jpg" alt="Logo de la marca">
-        </div>
-        <nav> 
-            <ul class="nav-links">
-                <li><a href="index.html">Volver</a></li>
-                <li><a href="cascos.html">Accesorios</a></li>
-                <li><a href="#">Bicicletas</a></li>
-                <li><a href="#">Repuesto</a></li>
-            </ul>
-        </nav>
-
-
-        <a href="#" class="btn"><button>Nosotros</button></a>
-
-    </header>
-    
-
-    <br>
-    <div>
-        <h2>BIKER STORE</h2>
-        <p id="bajada"><u> Cascos de bicicletas</p></u>
-
-        <img src="imagenes/cascos/casco 1.jpg" class="mx-auto d-block">
-
-    </div>
-
-
+</header>
+<body>
     <div class="shopping-cart">
         <h2>Carrito de compra</h2>
         <ul class="cart-items">
           <li class="cart-item">
             <div class="item-image">
-              <img src="imagenes/cascos/casco 1.jpg" alt="Productos">
+              <img src="imagenes/cascos/casco 3.jpg" alt="Productos">
             </div>
             <div class="item-details">
               <h3>Casco</h3>
-              <p>Precio: $15.000</p>
+              <p>Precio: $299.990</p>
               <label for="quantity">Cantidad:</label>
               <input type="number" name="quantity" value="1">
               <button class="remove-item">Eliminar Articulo</button>
@@ -60,43 +77,45 @@
           </li>
         </ul>
         <div class="cart-summary">
-          <p>Subtotal: $15.000</p>
-          <p>Iva: $5.000</p>
-          <p>Total: $20.000</p>
-          <button class="checkout-button">Boleta</button>
+          <p>Subtotal: $299.990</p>
+          <p>Iva: $29.990</p>
+          <p>Total: $329.980</p>
+          <button class="checkout-button">Pagar</button>
         </div>
       </div>
       
 
-
-        <footer>
-            <div class="contenedor-footer">
-                <div class="content-foo">
-                    <h4>Teléfono</h4>
-                    <p>+56932175978</p>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/cascos/casco 3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Casco Bicicleta Rampage Comp Camo Fox</p>
+                    <span class="precio">$299.990</span>
                 </div>
-                <div class="content-foo">
-                    <h4>Email</h4>
-                    <p>bikerstore@gmail.com</p>
+                <div class="item">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/cascos/casco 5.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Casco Bicicleta Rampage Pro Carbon Mips™ Negro Fox</p>
+                    <span class="precio">$499.990</span>
                 </div>
-                <div class="content-foo">
-                    <h4>Instagram</h4>
-                    <p>@BikerStore</p>
+                <div class="item">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/cascos/casco 6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Casco Bicicleta Rampage Pro Carbon Mips™ Fuel Azul/Amarillo Fox
+                    </p>
+                    <span class="precio">$499.990</span>
                 </div>
             </div>
-            <h2 class="titulo-final">&copy; Biker Store | Vive la sensacion del ciclismo al máximo </h2>
+            </div> 
+        </div>
 
-
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    
+        
 </body>
 
 </html>
